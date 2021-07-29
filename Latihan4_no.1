@@ -1,0 +1,13 @@
+var asalUsul = {
+    perkenalan:function(){
+    console.log('Nama saya' + ' ' + this.Nama + ',' + ' ' + 'umur' + ' ' + this.Umur + ' ' + 'tahun' + ','+ ' ' + 'alamat saya di' + ' ' + this.Alamat + ',' + ' ' +'dan saya punya' + ' ' + 'hobi yaitu' + ' ' + this.Hobi);
+    }
+};
+
+var saya = Object.create(asalUsul);
+
+    saya.Nama = 'Agus',
+    saya.Umur = '30',
+    saya.Alamat = 'Jln. Malioboro, Yogyakarta', 
+    saya.Hobi = 'Gaming!',
+    saya.perkenalan();
