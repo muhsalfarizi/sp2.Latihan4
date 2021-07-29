@@ -6,11 +6,11 @@ var loop = [
     ]
 
  for(var a = 0; a < 20; a++){
-    if(a % 2 == 0){
-        document.write(a + 1 + ' - ' + loop[0] + ['<br>']);
-    } if (a % 1 == 0){
-        document.write(a + 1 + ' - ' + loop[1] + ['<br>']);
-    } if (a == 0 || a == 4 || a == 12) {
-        document.write(a + 1 + ' - ' + loop[2] + ['<br>']);
+    if(a % 2 == 0 || a == 2){
+        document.write(a + 1 + '  ' + ' - ' + '  ' + loop[0] + ['<br>']);
+    } if (a % 2 == 1 || a == 7){
+        document.write(a + 1 + '  ' + ' - ' + '  ' + loop[1] + ['<br>']);
+    } if (a == 1 || a == 7 || a == 12) {
+        document.write(a + 1 + '  ' + ' - ' + '  ' + loop[2] + ['<br>']);
     }
 }
